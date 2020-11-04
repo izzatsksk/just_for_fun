@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>didn't i tell u not to click?</title>
+</head>
+<body>
+	<style>
+			body{
+			  color:green;
+			   margin: auto;
+
+			background:black;
+			font-size:130%;
+			text-indent:30%;
+			font-style: italic;
+			line-height:50px;
+			font-variant: small-caps;
+			}
+			#toast{
+			height:auto;
+			padding:5px;
+			border-radius: 100%;
+			background:rgba(0,0,0,0.6);
+			opacity:0;
+			width:auto;
+			position:fixed;
+			bottom:0px;
+			margin:auto;
+
+			}
+	</style>
+<div id="toast">???ERROR????</div>
+
+<script>
+
+var str="hello sir...	 			this is    Za'im   Izzat  {Intermediate}     ....  				 this page contain...	 virus that  						 will infect your pc  ..............         you have.... 						 30 seconds				to decide...            actually nvm.....				uploading virus  ......						100% sucessfull                                                ......fooled you :P :) hahahahahahahh!.......... just a little prank sir sksksk.......just testing out coding haha....its fun.....       bye  have a nice day       .............:)|";
+var arr=str.split("");
+var speed=0;
+setInterval(
+function(){
+if(speed<arr.length){
+document.body.innerHTML+=arr[speed++];
+}
+
+},100)
+
+setTimeout(function(){
+toast.style.display="opacity:1";
+
+navigator.vibrate(2000,2000);
+alert("GOT YOU");
+setInterval(function(){
+
+  toast.style.display="opacity:0";
+},1000)
+
+},29300)
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
